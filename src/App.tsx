@@ -2,6 +2,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { useRef } from 'react'
 import type { Mesh } from 'three'
+import MarbleTest from './exhibits/MarbleTest'
 
 function SpinningBox() {
   const ref = useRef<Mesh>(null)
@@ -22,7 +23,7 @@ export default function App() {
       <color attach="background" args={['#ffffff']} />
       <ambientLight intensity={0.8} />
       <directionalLight position={[5, 5, 5]} />
-      <SpinningBox />
+      <MarbleTest />
       <OrbitControls />
     </Canvas>
   )
