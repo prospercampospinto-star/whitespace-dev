@@ -7,12 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-*.blend
-*.blend1
 *.glb
 !public/models/marble-run.glb
 
-blender
 
 node_modules
 dist
