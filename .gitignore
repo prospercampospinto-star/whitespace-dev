@@ -10,6 +10,7 @@ lerna-debug.log*
 *.blend
 *.blend1
 *.glb
+!public/models/marble-run.glb
 
 blender
 
