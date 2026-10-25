@@ -7,6 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+*.blend
+*.blend1
+*.glb
+
+blender
+
 node_modules
 dist
 dist-ssr
