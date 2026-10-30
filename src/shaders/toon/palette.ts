@@ -13,20 +13,30 @@ import type { PaletteEntry } from './ToonMaterial.types'
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const PALETTE: Record<string, PaletteEntry> = {
-  // ── Marble Run ────────────────────────────────────────────────────────────
-  TrackWood:   { shadow: 0x7a5230, highlight: 0xe8c07a },
-  TrackMetal:  { shadow: 0x3a5f75, highlight: 0xb8dff0 },
-  Support:     { shadow: 0x3b2e22, highlight: 0x9b7d62 },
-  Base:        { shadow: 0x1e4a30, highlight: 0x7acf96 },
 
-  // ── Marbles (normal mode looks better for round objects) ──────────────────
-  MarbleRed:   { shadow: 0x8b1a10, highlight: 0xff8a7a, mode: 'normal' },
-  MarbleBlue:  { shadow: 0x1a2e8b, highlight: 0x7aaeff, mode: 'normal' },
-  MarbleGreen: { shadow: 0x1a5c30, highlight: 0x7affaa, mode: 'normal' },
-  MarbleGold:  { shadow: 0x8b6a00, highlight: 0xffe87a, mode: 'normal' },
+  // normal mode looks better for round objects ──────────────────
+  
+  // ground texture, should be splashes of color procedurally generated in the future
+  Base:        { shadow: 0x1e4a30, highlight: 0x7acf96 },
 
   // ── ToyZ scene ────────────────────────────────────────────────────────────
   // Add entries here as you name materials in Blender
+
+  Cylinders: { shadow: 0x1e4a30, highlight: 0x7acf96},
+
+  Shapes: { shadow: 0x1a5c30, highlight: 0x7affaa },
+
+  Rails:       { shadow: 0x1a2e8b, highlight: 0x7aaeff, mode: 'normal' },
+  Train:   { shadow: 0x8b1a10, highlight: 0xff8a7a },
+
+  Toys:   { shadow: 0x8b1a10, highlight: 0xff8a7a },
+  Box:  { shadow: 0x1a2e8b, highlight: 0x7aaeff },
+
+  Wood:  { shadow: 0x8b6a00, highlight: 0xffe87a },
+  Jenga:  { shadow: 0x8b6a00, highlight: 0xffe87a },
+
+  // placeholder texture for player:
+  player:  { shadow: 0x000000 , highlight: 0x000000  },
 
   // ── GP strokes exported as mesh ───────────────────────────────────────────
   // Flat black — no gradient, just a solid dark color
